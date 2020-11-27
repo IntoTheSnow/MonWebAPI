@@ -18,11 +18,12 @@ namespace MonWebAPI.Controllers
 
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            string reponse = client.DownloadString(urlAddress);
+            string jsonString = client.DownloadString(urlAddress);
 
             //TODO: JSON
+            string test = "{\"Age\":28,\"Name\":\"张三\"}";
 
-            return reponse;
+            return jsonString;
         }
     }
 }
