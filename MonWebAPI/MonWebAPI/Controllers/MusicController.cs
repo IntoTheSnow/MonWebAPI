@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,7 +11,7 @@ namespace MonWebAPI.Controllers
 {
     public class MusicController : ApiController
     {
-        public string Get(int id)
+        public JObject Get(int id)
         {
             //string urlAddress = "https://api.discogs.com/users/ausamerika/collection/folders/0/releases";
             //string urlAddress = "http://ip.taobao.com/service/getIpInfo.php?ip=203.49.243.0";
@@ -18,12 +19,12 @@ namespace MonWebAPI.Controllers
 
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            string jsonString = client.DownloadString(urlAddress);
+            string musicJSONString = client.DownloadString(urlAddress);
 
             //TODO: JSON
-            string test = "{\"Age\":28,\"Name\":\"张三\"}";
+            var musicData = JObject.Parse(musicJSONString);
 
-            return jsonString;
+            return musicData;
         }
     }
 }

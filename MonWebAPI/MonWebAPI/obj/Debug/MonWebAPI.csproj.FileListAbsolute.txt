@@ -108,6 +108,5 @@ C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\bin\zh-Hans\Microsoft.Owin.Security.Google.
 C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\bin\zh-Hans\System.Web.Http.Owin.resources.dll
-C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\obj\Debug\MonWebAPI.csprojResolveAssemblyReference.cache
 C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\obj\Debug\MonWebAPI.dll
 C:\Dev\MonWebAPI\MonWebAPI\MonWebAPI\obj\Debug\MonWebAPI.pdb
